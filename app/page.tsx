@@ -23,10 +23,10 @@ export default async function Home() {
   const data: Trending = await getData();
 
   return (
-    <div className='bg-white py-6 sm-:py-8 lg:py-12'>
+    <div className='bg-gray-100 dark:bg-gray-900 py-6 sm-:py-8 lg:py-12'>
       <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
         <div className='mb-10 md:mb-16'>
-          <h2 className='mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl'>
+          <h2 className='mb-4 text-center text-2xl font-bold text-gray-800 dark:text-gray-200 md:mb-6 lg:text-3xl'>
             Top Trending Movies
           </h2>
         </div>
@@ -34,7 +34,7 @@ export default async function Home() {
         <div className='grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8'>
           {data.results.map((movie) => (
             <div
-              className='flex flex-col overflow-hidden rounded-lg border bg-white'
+              className='flex flex-col overflow-hidden rounded-lg border bg-gray-300'
               key={movie.id}
             >
               <Link

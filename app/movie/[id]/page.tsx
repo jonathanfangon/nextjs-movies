@@ -34,14 +34,16 @@ export default async function Page({ params }: { params: { id: string } }) {
   const data = await getData(params.id);
 
   return (
-    <div className='rounded-lg border p-3'>
-      <h1 className='text-xl font-semibold mb-6'>Your Opinion</h1>
+    <div className='rounded-lg border p-3 bg-gray-300'>
+      <h1 className='text-xl font-semibold mb-6 dark:text-gray-600'>
+        Your Opinion
+      </h1>
 
       <div>
         <form action={postData}>
           <textarea
             name='comment'
-            className='w-full border border-teal-500 rounded-lg p-2'
+            className='w-full border border-teal-400 dark:border-teal-300 rounded-lg p-2 bg-gray-100 dark:placeholder:text-gray-600'
             placeholder='Add comment here...'
           ></textarea>
           <input type='hidden' name='id' value={params.id} />

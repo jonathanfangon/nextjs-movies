@@ -39,9 +39,11 @@ export default async function MovieId({
           fill
         />
       </div>
-      <h1 className='text-4xl font-bold text-center pt-5'>{data.title}</h1>
+      <h1 className='text-4xl font-bold text-center pt-5 dark:text-gray-200'>
+        {data.title}
+      </h1>
       <div className='flex gap-x-10 mt-10'>
-        <div className='w-1/2 font-medium'>
+        <div className='w-1/2 font-medium dark:text-gray-200'>
           <h1>
             <span className='underline'>Homepage:</span>{' '}
             <Link href={data.homepage} target='_blank'>
