@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-100 dark:bg-gray-900`}>
         <nav className='px-10 pt-5'>
           <Link href='/' className='text-2xl font-semibold'>
-            <span className='dark:text-gray-200'>Movie</span>{' '}
+            <span className='dark:text-gray-200'>Movie</span>
             <span className='text-teal-400 dark:text-teal-300'>Critic</span>
           </Link>
         </nav>
