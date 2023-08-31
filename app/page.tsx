@@ -1,3 +1,4 @@
+import './globals.css';
 import Image from 'next/image';
 import { Trending } from './interfaces';
 import Link from 'next/link';
@@ -26,7 +27,7 @@ export default async function Home() {
     <div className='bg-gray-100 dark:bg-gray-900 py-6 sm-:py-8 lg:py-12'>
       <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
         <div className='mb-10 md:mb-16'>
-          <h2 className='mb-4 text-center text-2xl font-bold text-gray-800 dark:text-gray-200 md:mb-6 lg:text-3xl'>
+          <h2 className='playfair-display-text mb-4 text-center text-2xl font-bold text-gray-800 dark:text-gray-200 md:mb-6 lg:text-3xl'>
             Top Trending Movies
           </h2>
         </div>
@@ -50,7 +51,7 @@ export default async function Home() {
                 />
               </Link>
               <div className='flex flex-1 flex-col p-4 sm:p-6'>
-                <h2 className='mb-2 text-lg font-semibold text-gray-800'>
+                <h2 className='mb-2 text-lg font-semibold text-gray-800 playfair-display-text'>
                   <Link
                     href={`/movie/${movie.id}`}
                     className='transition duration-100 hover:text-teal-500 active:text-teal-600'

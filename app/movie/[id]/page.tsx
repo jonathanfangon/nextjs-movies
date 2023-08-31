@@ -1,5 +1,6 @@
 export const dynamic = 'force-dynamic';
 
+import '../../globals.css';
 import SubmitButton from '@/app/components/SubmitButton';
 import { db } from '@/app/db';
 import { revalidatePath } from 'next/cache';
@@ -35,7 +36,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div className='rounded-lg border p-3 bg-gray-300'>
-      <h1 className='text-xl font-semibold mb-6 dark:text-gray-600'>
+      <h1 className='text-xl font-semibold mb-6 dark:text-gray-600 playfair-display-text'>
         Your Opinion
       </h1>
 

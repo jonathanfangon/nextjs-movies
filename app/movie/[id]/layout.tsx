@@ -1,3 +1,4 @@
+import '../../globals.css';
 import Image from 'next/image';
 import { Movie } from '@/app/interfaces';
 import Link from 'next/link';
@@ -39,7 +40,7 @@ export default async function MovieId({
           fill
         />
       </div>
-      <h1 className='text-4xl font-bold text-center pt-5 dark:text-gray-200'>
+      <h1 className='text-4xl font-bold text-center pt-5 dark:text-gray-200 playfair-display-text'>
         {data.title}
       </h1>
       <div className='flex gap-x-10 mt-10'>
