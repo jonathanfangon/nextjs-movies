@@ -53,7 +53,7 @@ export default async function MovieId({
 
           <h1>
             <span className='underline'>Original Language:</span>{' '}
-            {data.original_language}
+            {data.original_language.toUpperCase()}
           </h1>
 
           <p>
